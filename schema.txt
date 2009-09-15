@@ -1,0 +1,19 @@
+REATE TABLE grinder_datalog ( 
+  id MEDIUMINT NOT NULL AUTO_INCREMENT,
+  agent varchar(20) NOT NULL, 
+  sample int(4) UNSIGNED NOT NULL, 
+  thread int(4) UNSIGNED NOT NULL, 
+  run int(4)  UNSIGNED NOT NULL,
+  test varchar(10) NOT NULL,
+  start BIGINT UNSIGNED NOT NULL,
+  latency INT UNSIGNED NOT NULL,
+  errors INT UNSIGNED NOT NULL,
+  res_code INT UNSIGNED NOT NULL,
+  res_len INT UNSIGNED NOT NULL,
+  res_err INT UNSIGNED NOT NULL,
+  resolve INT UNSIGNED NOT NULL,
+  establish INT UNSIGNED NOT NULL,
+  firstbyte INT UNSIGNED NOT NULL,
+  PRIMARY KEY  (id)
+);
+
